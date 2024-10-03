@@ -1,0 +1,60 @@
+:root {
+    --fundo1: #00ff00; /* Cor verde para o tema claro */
+    --fonte: #ffffff; /* Cor branca para texto */
+    --fundo2: #000000; /* Cor preta para o tema escuro */
+}
+
+* {
+    color: var(--fontColor);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; /* Adicionado para remover margens padrão */
+    padding: 0; /* Adicionado para remover preenchimentos padrão */
+}
+
+body {
+    background-color: var(--fundo1);
+    color:var(--fundo2);
+}
+
+ul {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+.light-theme {
+    background-color: var(--fundo1);
+    Color: var(--fundo2);
+    --btnBg: var(--fundo2);
+    --btnFontColor: var(--fundo2);
+}
+
+.dark-theme {
+    background-color: var(--fundo2);
+    Color: var(--fundo1);
+    --btnBg: var(--fundo1);
+    --btnFontColor: var(--fundo2);
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--fundo1);
+    background-color: var(--fundo2);
+    cursor: pointer; /* Adicionado para indicar que é clicável */
+}
+
+.btn:focus {
+    outline-style: none; /* Remove a borda de foco padrão */
+}
